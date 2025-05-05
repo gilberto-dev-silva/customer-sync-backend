@@ -30,4 +30,6 @@ WORKDIR /var/www
 
 USER $user
 
+ENTRYPOINT ["entrypoint.sh"]
+
 CMD ["php-fpm"]
