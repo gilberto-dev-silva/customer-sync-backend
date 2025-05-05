@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/php/Dockerfile
+    command: php-fpm
     container_name: laravel_app
     restart: always
     volumes:
